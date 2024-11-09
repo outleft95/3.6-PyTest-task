@@ -10,5 +10,5 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 def test_present_basket_button(browser):
     browser.get(link) 
     time.sleep(10)
-    element = browser.find_elements(By.CSS_SELECTOR, ".basket-mini .btn")
+    element = browser.find_elements(By.CSS_SELECTOR, "button.btn-primary")
     assert element, 'no element'
